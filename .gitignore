@@ -27,3 +27,9 @@ Thumbs.db
 # Logs
 *.log
 logs/
+
+# Large media files
+*.mp4
+*.mkv
+*.mov
+
