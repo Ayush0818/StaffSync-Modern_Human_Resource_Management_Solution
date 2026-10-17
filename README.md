@@ -68,15 +68,26 @@ StaffSync has dedicated dashboards and permissions for three types of users:
 
 ## 🎥 Project Demo Video
 
-Experience StaffSync in action! Watch the complete walkthrough of the HR Dashboard, Employee workflows, Attendance tracking, Leave management, and Dark mode:
+Experience StaffSync in action! Watch the complete walkthrough covering the HR Dashboard, Employee workflows, Attendance tracking, Leave management, Reports, and Dark mode:
 
 <div align="center">
 
-https://github.com/user-attachments/assets/StaffSync%20Demo.mp4
+[![Watch StaffSync Demo Video](https://img.shields.io/badge/▶️%20Watch%20Demo%20Video-Direct%20Streaming%20(HD)-2ECC71?style=for-the-badge&logoColor=white)](https://files.catbox.moe/uddfpr.mp4)
 
-▶️ **[Click here to watch / download the full StaffSync Demo Video (`StaffSync Demo.mp4`)](./StaffSync%20Demo.mp4)**
+<br/>
+<br/>
+
+### 🎬 **[▶️ Click Here to Stream the Full Demo Walkthrough](https://files.catbox.moe/uddfpr.mp4)**
+*(Opens directly in your browser — instant HD streaming, no download needed)*
+
+---
+
+```
+🎥 Video URL: https://files.catbox.moe/uddfpr.mp4
+```
 
 </div>
+
 
 ---
 
