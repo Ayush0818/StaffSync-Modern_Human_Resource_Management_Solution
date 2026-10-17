@@ -1,138 +1,113 @@
-# 🧑‍💼 StaffSync — Human Resource Management System
-
 <div align="center">
 
-![StaffSync Banner](https://img.shields.io/badge/StaffSync-HRM%20System-1E3A5F?style=for-the-badge&logo=users&logoColor=white)
-![MERN Stack](https://img.shields.io/badge/MERN-Stack-2ECC71?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-F39C12?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+<img src="https://img.shields.io/badge/-StaffSync-1E3A5F?style=for-the-badge&logoColor=white" height="60" alt="StaffSync Logo" />
 
-A full-stack **Human Resource Management System** built with the **MERN Stack** — MongoDB, Express.js, React.js, and Node.js. Manage employees, attendance, leaves, announcements, and trainings — all in one place.
+# 🏢 StaffSync — Modern Human Resource Management Solution
+
+**A complete, production-ready HR Management System built with the MERN Stack**  
+*Manage your entire workforce — employees, attendance, leaves, trainings, and reports — all from one beautiful dashboard.*
+
+<br/>
+
+[![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)](https://redux-toolkit.js.org/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Active-2ECC71?style=for-the-badge)]()
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge)]()
+
+<br/>
+
+[🚀 Live Demo](#-getting-started) • [📖 Features](#-features) • [🛠️ Installation](#-installation) • [📸 Screenshots](#-screenshots) • [🔐 Credentials](#-demo-credentials)
 
 </div>
 
 ---
 
+## 🌟 What is StaffSync?
+
+**StaffSync** is a full-featured Human Resource Management System that helps organizations manage their entire workforce digitally. From the moment an employee joins to their daily attendance, leave requests, training programs, and performance analytics — StaffSync handles it all.
+
+> Built as a complete MERN Stack application with **role-based access control**, **real-time analytics**, **dark mode**, and a clean, intuitive UI that works for HR teams of all sizes.
+
+---
+
 ## ✨ Features
 
-### 👤 Role-Based Access (3 Roles)
-| Feature | Employee | Manager | HR Admin |
-|---------|----------|---------|----------|
-| View own profile | ✅ | ✅ | ✅ |
-| Apply for leave | ✅ | ❌ | ❌ |
-| Check in / Check out | ✅ | ❌ | ❌ |
-| View team attendance | ❌ | ✅ | ✅ |
-| Approve / Reject leaves | ❌ | ✅ | ✅ |
-| Add / Remove employees | ❌ | ❌ | ✅ |
-| Create announcements | ❌ | ❌ | ✅ |
-| View HR analytics & reports | ❌ | ❌ | ✅ |
+### 🎭 Three-Role System
+StaffSync has dedicated dashboards and permissions for three types of users:
+
+| 👤 Employee | 👔 Manager | 🧑‍💼 HR Admin |
+|:-----------:|:----------:|:------------:|
+| View own profile & info | View team attendance | Manage all employees |
+| Apply for leave | Approve / Reject leaves | Add & remove managers |
+| Daily check-in / check-out | Manage team members | Mark attendance manually |
+| View announcements | Create training programs | Post announcements |
+| Enroll in trainings | View team analytics | Full HR analytics & reports |
 
 ### 🔑 Core Modules
-- **Authentication** — JWT-based login with role-based protected routes
-- **Employee Management** — Add, edit, deactivate, or permanently delete employees
-- **Manager Management** — Manage departmental managers and their teams
-- **Attendance Tracking** — Daily check-in/check-out with manual HR override
-- **Leave Management** — Apply, approve, reject, and cancel leave requests with balance tracking
-- **Announcements** — Company-wide posts with pinning and category tags
-- **Training Programs** — Create sessions and manage employee enrollment
-- **Reports & Analytics** — Live charts for attendance trends, leave breakdown, and headcount
-- **Notifications** — In-app notification system for leave updates and announcements
-- **Dark Mode** — Full light/dark toggle with localStorage persistence
+
+| Module | Description |
+|--------|-------------|
+| 🔐 **Authentication** | Secure JWT login with role detection and auto-redirect |
+| 👥 **Employee Management** | Add, edit, view, deactivate, or permanently delete employees |
+| 🏢 **Manager Management** | Manage departmental heads, assign team members |
+| 📅 **Attendance Tracking** | Daily check-in/check-out with HR manual override |
+| 🌴 **Leave Management** | Apply, approve, reject, cancel leaves with balance tracking |
+| 📢 **Announcements** | Company-wide posts with pin support and category tags |
+| 🎓 **Training Programs** | Create sessions, enroll employees, track status |
+| 📊 **Reports & Analytics** | Live charts — attendance trends, leave breakdown, headcount |
+| 🔔 **Notifications** | In-app alerts for leave decisions, new announcements |
+| 🌙 **Dark Mode** | Full light / dark theme toggle, saved per user |
+
+---
+
+## 📸 Screenshots
+
+> *Login to the live demo to explore all views*
+
+### 🖥️ HR Dashboard
+Clean overview of total employees, today's attendance, pending leaves, and quick analytics.
+
+### 📊 Reports & Analytics
+Real-time bar and pie charts showing monthly attendance trends, leave category breakdown, and department headcount — all powered by live data from MongoDB.
+
+### 🌴 Leave Management
+Full leave request flow — employees apply, managers review, HR has final control. Leave balances update automatically on approval.
+
+### 🌙 Dark Mode
+One click — every page, table, modal, and form switches to a clean dark theme.
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Backend
-| Technology | Purpose |
-|---|---|
-| **Node.js** | JavaScript runtime |
-| **Express.js** | REST API framework |
-| **MongoDB** | NoSQL database |
-| **Mongoose** | ODM for MongoDB schemas |
-| **JWT** | Authentication tokens |
-| **bcryptjs** | Password hashing (12 salt rounds) |
-| **Multer v2** | File uploads (profile photos) |
-| **Morgan** | HTTP request logging |
-| **express-rate-limit** | API rate limiting |
+```
+Node.js + Express.js   →  REST API server
+MongoDB + Mongoose     →  Database & schema modeling
+JWT (jsonwebtoken)     →  Authentication tokens
+bcryptjs               →  Password hashing (12 salt rounds)
+Multer v2              →  Profile photo uploads
+express-rate-limit     →  Brute-force protection on auth routes
+Morgan                 →  HTTP request logging
+```
 
 ### Frontend
-| Technology | Purpose |
-|---|---|
-| **React 18** | UI component library |
-| **Vite** | Frontend build tool |
-| **Redux Toolkit** | Global state management |
-| **React Router v6** | Client-side routing |
-| **Bootstrap 5** | UI styling framework |
-| **Recharts v3** | Data visualization charts |
-| **Axios** | HTTP client with interceptors |
-| **Formik + Yup** | Form handling & validation |
-| **React Toastify** | Toast notifications |
-| **React Icons** | Icon library |
-
----
-
-## 📁 Project Structure
-
 ```
-staffsync/
-├── backend/
-│   ├── config/
-│   │   └── db.js                  # MongoDB connection
-│   ├── controllers/               # Business logic handlers
-│   │   ├── authController.js
-│   │   ├── employeeController.js
-│   │   ├── managerController.js
-│   │   ├── attendanceController.js
-│   │   ├── leaveController.js
-│   │   ├── announcementController.js
-│   │   ├── trainingController.js
-│   │   └── notificationController.js
-│   ├── middleware/
-│   │   ├── authMiddleware.js      # JWT verification
-│   │   ├── roleMiddleware.js      # Role-based access control
-│   │   ├── errorHandler.js        # Centralized error handler
-│   │   └── uploadMiddleware.js    # Multer file upload config
-│   ├── models/                    # Mongoose schemas
-│   │   ├── User.js
-│   │   ├── Employee.js
-│   │   ├── Manager.js
-│   │   ├── Attendance.js
-│   │   ├── Leave.js
-│   │   ├── Announcement.js
-│   │   ├── Training.js
-│   │   └── Notification.js
-│   ├── routes/                    # Express route definitions
-│   ├── utils/
-│   │   ├── generateToken.js
-│   │   ├── sendNotification.js
-│   │   └── seeder.js              # Database seed script
-│   ├── .env                       # Environment variables
-│   └── server.js                  # App entry point
-│
-└── frontend/
-    ├── src/
-    │   ├── api/
-    │   │   └── axiosConfig.js     # Axios instance + interceptors
-    │   ├── components/common/     # Reusable UI components
-    │   ├── context/
-    │   │   └── ThemeContext.jsx   # Dark mode provider
-    │   ├── pages/
-    │   │   ├── auth/              # Login, Unauthorized
-    │   │   ├── employee/          # Employee-facing pages
-    │   │   ├── manager/           # Manager-facing pages
-    │   │   └── hr/                # HR admin pages
-    │   ├── redux/
-    │   │   ├── store.js
-    │   │   └── slices/            # 8 Redux slices
-    │   ├── routes/
-    │   │   ├── AppRoutes.jsx      # All app routes
-    │   │   └── ProtectedRoute.jsx # Auth + role guard
-    │   └── utils/
-    │       ├── formatDate.js      # Date helpers + getFullName()
-    │       ├── errorMessages.js   # Human-readable API errors
-    │       └── constants.js       # App-wide constants
-    └── vite.config.js             # Vite + API proxy config
+React 18 + Vite        →  Fast, modern UI
+Redux Toolkit          →  Centralized state management
+React Router v6        →  Client-side routing with guards
+Bootstrap 5            →  Responsive layout & components
+Recharts v3            →  Beautiful data visualizations
+Axios                  →  HTTP client with interceptors
+Formik + Yup           →  Forms & validation
+React Toastify         →  User-friendly toast messages
+React Icons            →  Icon library
 ```
 
 ---
@@ -140,23 +115,32 @@ staffsync/
 ## 🚀 Getting Started
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/) v18 or higher
-- [MongoDB](https://www.mongodb.com/) (local installation or Atlas cloud)
+
+Make sure you have these installed:
+- [Node.js](https://nodejs.org/) v18+
+- [MongoDB](https://www.mongodb.com/) (local) or a [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) connection string
 - npm
 
+---
+
+## 🔧 Installation
+
 ### 1. Clone the repository
+
 ```bash
-git clone https://github.com/your-username/staffsync.git
-cd staffsync
+git clone https://github.com/Ayush0818/The-StaffSync---Modern-Human-Resource-Management-Solution.git
+cd The-StaffSync---Modern-Human-Resource-Management-Solution
 ```
 
-### 2. Backend Setup
+### 2. Setup the Backend
+
 ```bash
 cd backend
 npm install
 ```
 
-Create a `.env` file inside `backend/`:
+Create a `.env` file in the `backend/` folder:
+
 ```env
 PORT=5000
 NODE_ENV=development
@@ -167,181 +151,173 @@ CLIENT_URL=http://localhost:5173
 ```
 
 ### 3. Seed the Database
+
 ```bash
 npm run seed
 ```
 
-This creates demo users, employees, managers, attendance records, announcements, and training programs.
+This will create:
+- ✅ 1 HR Admin account
+- ✅ 2 Manager accounts with departments
+- ✅ 5 Employee accounts
+- ✅ 7 days of sample attendance records
+- ✅ Sample announcements and training programs
 
-### 4. Start the Backend Server
+### 4. Start the Backend
+
 ```bash
-npm run dev     # Development with nodemon (auto-restart)
-# or
-npm start       # Production
+npm run dev
 ```
 
-Backend runs on `http://localhost:5000`
+> Backend runs on → `http://localhost:5000`
 
-### 5. Frontend Setup
+### 5. Setup the Frontend
+
 ```bash
 cd ../frontend
 npm install
 npm run dev
 ```
 
-Frontend runs on `http://localhost:5173`
+> Frontend runs on → `http://localhost:5173`
 
-### 6. Open in Browser
+### 6. Open in your browser
+
 ```
 http://localhost:5173
 ```
 
 ---
 
-## 🔐 Demo Login Credentials
+## 🔐 Demo Credentials
 
-| Role | Email | Password |
-|------|-------|----------|
-| **HR Admin** | hr@staffsync.com | hr123456 |
-| **Manager 1** | manager@staffsync.com | mgr123456 |
-| **Manager 2** | manager2@staffsync.com | mgr123456 |
-| **Employee** | alice@staffsync.com | emp123456 |
-| **Employee** | bob@staffsync.com | emp123456 |
-| **Employee** | charlie@staffsync.com | emp123456 |
+Use these accounts to explore the system:
 
----
-
-## 🔌 API Reference
-
-### Authentication
-| Method | Endpoint | Access | Description |
-|--------|----------|--------|-------------|
-| `POST` | `/api/auth/register` | HR only | Register new employee or manager |
-| `POST` | `/api/auth/login` | Public | Login and receive JWT token |
-| `GET` | `/api/auth/me` | Private | Get current user profile |
-| `PUT` | `/api/auth/change-password` | Private | Update password |
-
-### Employees
-| Method | Endpoint | Access | Description |
-|--------|----------|--------|-------------|
-| `GET` | `/api/employees` | HR, Manager | List all employees (with filters) |
-| `GET` | `/api/employees/:id` | Private | Get single employee |
-| `PUT` | `/api/employees/:id` | HR, Self | Update employee profile |
-| `DELETE` | `/api/employees/:id` | HR | Deactivate employee (soft delete) |
-| `DELETE` | `/api/employees/:id/permanent` | HR | Permanently delete employee |
-
-### Attendance
-| Method | Endpoint | Access | Description |
-|--------|----------|--------|-------------|
-| `POST` | `/api/attendance/checkin` | Employee | Daily check-in |
-| `PUT` | `/api/attendance/checkout` | Employee | Daily check-out |
-| `GET` | `/api/attendance/my` | Employee | Personal attendance history |
-| `GET` | `/api/attendance/all` | HR, Manager | All attendance records |
-| `PUT` | `/api/attendance/mark` | HR | Manually record attendance |
-| `GET` | `/api/attendance/summary` | HR, Manager | Attendance count summary |
-
-### Leaves
-| Method | Endpoint | Access | Description |
-|--------|----------|--------|-------------|
-| `POST` | `/api/leaves/apply` | Employee | Submit leave request |
-| `GET` | `/api/leaves/my` | Employee | Personal leave history |
-| `GET` | `/api/leaves/balance` | Employee | Remaining leave balance |
-| `GET` | `/api/leaves` | HR, Manager | All leave requests |
-| `GET` | `/api/leaves/pending` | HR, Manager | Pending leave requests |
-| `PUT` | `/api/leaves/:id/approve` | HR, Manager | Approve leave |
-| `PUT` | `/api/leaves/:id/reject` | HR, Manager | Reject leave with comments |
-| `DELETE` | `/api/leaves/:id` | Employee | Cancel own leave |
-
-### Announcements, Trainings, Notifications
-> Full API list available in `PROJECT_EXPLANATION.txt`
+| Role | Email | Password | Access |
+|------|-------|----------|--------|
+| 🧑‍💼 **HR Admin** | `hr@staffsync.com` | `hr123456` | Full system access |
+| 👔 **Manager 1** | `manager@staffsync.com` | `mgr123456` | Team & leaves |
+| 👔 **Manager 2** | `manager2@staffsync.com` | `mgr123456` | Team & leaves |
+| 👤 **Employee** | `alice@staffsync.com` | `emp123456` | Own profile & leaves |
+| 👤 **Employee** | `bob@staffsync.com` | `emp123456` | Own profile & leaves |
+| 👤 **Employee** | `charlie@staffsync.com` | `emp123456` | Own profile & leaves |
 
 ---
 
-## 🗄️ Database Design
+## 🗂️ Project Structure
 
 ```
-Users ──────── Employee (1:1)  userId ref
-         └──── Manager  (1:1)  userId ref
-
-Manager ──── Employee[] (teamMembers array)
-
-Employee ──── Attendance[] (compound index: employeeId + date)
-         ──── Leave[]      (leave requests)
-
-User ──── Notification[] (in-app alerts)
+staffsync/
+│
+├── backend/                        # Express.js REST API
+│   ├── config/db.js                # MongoDB connection
+│   ├── controllers/                # Route handlers & business logic
+│   ├── middleware/                 # Auth, RBAC, error handling, uploads
+│   ├── models/                     # Mongoose schemas (8 models)
+│   ├── routes/                     # Express routers (8 route files)
+│   ├── utils/                      # Token generator, notifications, seeder
+│   ├── .env                        # Environment config (not pushed to git)
+│   └── server.js                   # App entry point
+│
+└── frontend/                       # React + Vite app
+    └── src/
+        ├── api/axiosConfig.js      # Axios instance with auth interceptors
+        ├── components/common/      # Reusable: Table, Card, Modal, Topbar, Sidebar
+        ├── context/ThemeContext.jsx # Dark mode state
+        ├── pages/
+        │   ├── auth/               # Login, Unauthorized
+        │   ├── employee/           # 6 employee pages
+        │   ├── manager/            # 5 manager pages
+        │   └── hr/                 # 8 HR admin pages
+        ├── redux/slices/           # 8 Redux slices (auth, employees, leaves...)
+        ├── routes/                 # Protected routes with role guards
+        └── utils/                  # Date helpers, error messages, constants
 ```
-
-### Leave Balance per Employee
-| Type | Days/Year |
-|------|-----------|
-| 🟢 Casual | 12 |
-| 🟡 Sick | 10 |
-| 🔵 Earned | 15 |
-| ⚪ Unpaid | Unlimited |
 
 ---
 
 ## 🔒 Security
 
-- **JWT Tokens** — Signed with secret key, expire after 1 day
-- **Password Hashing** — bcrypt with 12 salt rounds (never stored in plain text)
-- **Role-Based Access Control (RBAC)** — Three roles: `employee`, `manager`, `hr`
-- **Protected Routes** — Both frontend (React Router) and backend (Express middleware)
-- **Rate Limiting** — 100 requests per 15 minutes on auth routes
-- **CORS** — Configured to allow only the client origin
-- **Human-Readable Errors** — API errors mapped to user-friendly messages
+- 🔑 **JWT Tokens** — Expire after 1 day; attached to every request via Axios interceptor
+- 🔐 **bcrypt Hashing** — Passwords hashed with 12 salt rounds, never stored plain
+- 🛡️ **Role-Based Access Control** — 3 roles with separate permissions on every route
+- 🚧 **Protected Routes** — Both frontend (React Router guards) and backend (Express middleware)
+- ⏱️ **Rate Limiting** — 100 requests per 15 minutes on `/api/auth` to prevent brute force
+- 🌐 **CORS** — Configured to allow only the client origin
+- 💬 **Human-Readable Errors** — All API errors mapped to friendly user messages
 
 ---
 
-## 🌙 Dark Mode
+## 📊 Database Schema Overview
 
-Click the **🌙 moon icon** in the top navigation bar to toggle dark mode. Your preference is saved in `localStorage` and applied instantly on every visit — no flicker.
+```
+User ──────────────── Employee (1:1)
+              └────── Manager  (1:1)
+
+Manager ──── [ Employee, Employee, ... ]   (teamMembers)
+
+Employee ──── [ Attendance records ]        (daily, unique per day)
+         ──── [ Leave requests ]            (with balance deduction)
+
+User ─────── [ Notifications ]              (indexed for fast reads)
+```
+
+### Leave Balance Per Employee Per Year
+
+| Leave Type | Days |
+|-----------|------|
+| 🟢 Casual | 12 days |
+| 🟡 Sick | 10 days |
+| 🔵 Earned | 15 days |
+| ⚪ Unpaid | Unlimited |
 
 ---
 
-## 📊 Reports & Analytics
+## 🌙 Dark Mode Support
 
-The Reports page shows **live data** from the database:
-
-- 📈 **Monthly Attendance Trends** — Bar chart for last 6 months (Present / Absent / Late)
-- 🍩 **Leave Category Breakdown** — Pie chart by leave type
-- 🏢 **Headcount by Department** — Bar chart of employee distribution
-- 📊 **KPI Cards** — Total workforce, attendance rate, total leave applications
+StaffSync ships with a **full dark mode** across every page:
+- Toggle with the 🌙 / ☀️ button in the top navigation bar
+- Preference is saved in `localStorage` — persists across sessions
+- Covers: cards, tables, modals, forms, dropdowns, sidebar, topbar
 
 ---
 
 ## 🤝 Contributing
 
-1. Fork the project
-2. Create your branch: `git checkout -b feature/your-feature`
-3. Commit your changes: `git commit -m "Add: your feature description"`
-4. Push to the branch: `git push origin feature/your-feature`
-5. Open a Pull Request
+Contributions are always welcome!
+
+```bash
+# 1. Fork the project
+# 2. Create your feature branch
+git checkout -b feature/AmazingFeature
+
+# 3. Commit your changes
+git commit -m "Add: some amazing feature"
+
+# 4. Push to the branch
+git push origin feature/AmazingFeature
+
+# 5. Open a Pull Request
+```
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License**.
+Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
 
 ---
 
-## 👨‍🎓 About
+## 👨‍💻 Author
 
-**StaffSync** was built as a college project to demonstrate full-stack MERN development skills:
+**Ayush** — [@Ayush0818](https://github.com/Ayush0818)
 
-- ✅ RESTful API design with Express.js
-- ✅ JWT authentication & role-based access control
-- ✅ Redux Toolkit for predictable state management
-- ✅ Responsive UI with Bootstrap 5 + custom CSS variables
-- ✅ MongoDB schema design with Mongoose
-- ✅ Real-time-like notifications
-- ✅ Dark mode support
+> ⭐ If you found this project useful, please give it a star! It helps others discover it.
 
 ---
 
 <div align="center">
 
-**Made with ❤️ using the MERN Stack**
+**Built with ❤️ using MongoDB · Express · React · Node.js**
 
 </div>
