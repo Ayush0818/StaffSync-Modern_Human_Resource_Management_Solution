@@ -22,7 +22,7 @@
 
 <br/>
 
-[🚀 Live Demo](#-getting-started) • [📖 Features](#-features) • [🛠️ Installation](#-installation) • [📸 Screenshots](#-screenshots) • [🔐 Credentials](#-demo-credentials)
+[🎥 Demo Video](#-project-demo-video) • [📖 Features](#-features) • [🛠️ Installation](#-installation) • [🔐 Credentials](#-demo-credentials) • [📊 Reports](#-reports--analytics)
 
 </div>
 
@@ -66,9 +66,23 @@ StaffSync has dedicated dashboards and permissions for three types of users:
 
 ---
 
-## 📸 Screenshots
+## 🎥 Project Demo Video
 
-> *Login to the live demo to explore all views*
+Experience StaffSync in action! Watch the complete walkthrough of the HR Dashboard, Employee workflows, Attendance tracking, Leave management, and Dark mode:
+
+<div align="center">
+
+https://github.com/user-attachments/assets/StaffSync%20Demo.mp4
+
+▶️ **[Click here to watch / download the full StaffSync Demo Video (`StaffSync Demo.mp4`)](./StaffSync%20Demo.mp4)**
+
+</div>
+
+---
+
+## 📸 Key Highlights & Walkthrough
+
+> *Watch the demo video above to explore all features live!*
 
 ### 🖥️ HR Dashboard
 Clean overview of total employees, today's attendance, pending leaves, and quick analytics.
